@@ -41,6 +41,8 @@ DEFAULT_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'django_filters',
+    'oauth2_provider',
 ]
 
 LOCAL_APPS = [
@@ -48,6 +50,10 @@ LOCAL_APPS = [
 ]
 
 INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
+
+REST_FRAMEWORK = {
+'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend')
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
