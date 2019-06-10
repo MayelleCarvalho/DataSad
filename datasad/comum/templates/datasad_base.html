@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load i18n%}
+{% load staticfiles %}
+<html>
+   <head>
+        <title>Index Data-SAD</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
+        libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-</body>
+   <body>
+        <header>
+            {% block body_header %}
+            <div class="body-container">
+                <nav>
+                    <div class="d-inline p-2">
+                        <a href="{% url 'exibir_index' %}"><img class="logo float-left" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></a>
+                    </div>
+                    <ul class="header-menu float-right drop-header">
+                        <li><a href="#">perfil</a></li>
+                        <li><a href="#">Sobre</a></li>
+                            <li><a href="#">O que fazemos?</a>
+                                <ul>
+                                      <li><a href="#">Web Design</a></li>
+                                      <li><a href="#">SEO</a></li>
+                                      <li><a href="#">Design</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            {% endblock body_header %}
+        </header>
+        {% block body_container %}
+
+        {% endblock body_container %}
+        <footer class="fixed-bottom" id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-wrapper">
+                    </div>
+                </div>
+            </div>
+            <div class="item-footer" align="center">
+                <p>copyright 2019. Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <script src="<a class='vglnk' href='https://code.jquery.com/jquery.js' rel='nofollow'><span>https</span><span>://</span><span>code</span><span>.</span><span>jquery</span><span>.</span><span>com</span><span>/</span><span>jquery</span><span>.</span><span>js</span></a>"></script>
+        <script src="js/bootstrap.min.js"></script>
+   </body>
 </html>

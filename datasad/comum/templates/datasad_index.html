@@ -1,39 +1,31 @@
-<!DOCTYPE html>
+{% extends "datasad_base.html" %}
 {% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-</head>
 
-<body>
-    <div class="container-fluid">
-        container
-        <!--<div class="container">-->
-            <div class="row">
+{% block body_header %}
+    {% include 'datasad_header_about.html' %}
+{% endblock body_header %}
 
-                <div align="center" class="col-md-auto">
-                    uma coluna
-                </div>
-            </div>
-        <!--</div>-->
-
+{% block body_container %}
+<div class="body-container">
+    <div class="box-about">
+        <div class="jumbotron">
+          <h1 align="center"><img class="img-fluid logo-about" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></h1>
+          <p  align="center" class="lead">
+              Plataforma de Integração de dados de alunos, para avaliação de desempenho escolar.
+          </p>
+          <hr class="my-4">
+          <p class="text-justify">
+              O Data-SAD é uma aplicação web, desenvolvida para o Instituto Federal do Piauí (IFPI),
+              Campus Teresina Central, para coleta, integração e gerenciamento de dados dos alunos da
+              instituição, disponibilizando informações estatísticas para análise dos profissionais
+              sobre os fatores sociais, demográficos, econômicos e sintomas de ansiedade e depressão
+              por meio de instrumentos(formulários, questionários testes) validados.
+          </p>
+          <div align="center">
+              <a class="btn btn-outline-success btn-lg btn-block" href="{% url 'exibir_login' %}" role="button">Entrar!</a>
+              <a class="btn btn-outline-primary btn-lg btn-block" href="{% url 'exibir_cadastro_usuario' %}" role="button">Cadastre-se!</a>
+          </div>
+        </div>
     </div>
-
-
-    <!-- Footer-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                container footer
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2019. Todos os direitos reservados</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+</div>
+{% endblock body_container %}

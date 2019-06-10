@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "datasad_base.html" %}
 
-</body>
-</html>
+{% block body_header %}
+    {% include 'datasad_header_about.html' %}
+{% endblock body_header %}
+
+{% block body_container %}
+    <div class="body-container">
+        <!--FORMULÁRIO DE LOGIN-->
+        <div class="box-login">
+            <form method="post" action="{% url 'exibir_home' %}">
+              <h3 align="center">Login</h3>
+              <p>
+                <label for="nome_login">Usuário:</label>
+                <input id="nome_login" name="nome_login" required="required"
+                   type="text" placeholder="ex. contato@htmlecsspro.com"/>
+              </p>
+
+              <p>
+                <label for="email_login">Senha:</label>
+                <input id="email_login" name="email_login" required="required"
+                   type="password" placeholder="ex. senha" />
+              </p>
+
+              <p>
+                <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                <label for="manterlogado">Manter-me logado</label>
+              </p>
+
+              <p>
+                <input type="submit" class="btn btn-success" value="Entrar" />
+              </p>
+
+              <p class="link">
+                Ainda não tem conta?
+                <a href="{% url 'exibir_cadastro_usuario' %}">Crie uma conta</a>!
+              </p>
+            </form>
+        </div>
+    </div>
+{% endblock body_container %}

@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+header, footer{
+    height: 55px;
+    background-color: #1E90FF;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.body-container{
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width:80%;
+    height:100%;
+    background: #F0FFF0;
+}
+
+.box-about {
+    width:60%;
+    height:100%;
+    background: #FFFFFF;
+}
+
+.box-login {
+    width:40%;
+    height: 60%;
+    background: #D3D3D3;
+    padding: 15px 3% 15px 3%;
+    margin: 0 0 80px 0;
+}
+
+.box-cadastro{
+    width: 90%;
+    height:100%;
+    background: #FFFFFF;
+    padding: 15px 3% 15px 3%;
+    margin: 10px 0 0 0;
+}
+
+.card-table {
+    width: 100%;    
+}
+
+.card-menu-opcoes {
+    width: 150px;
+    height: 100px;
+    color: #000080;
+    font-style: unset;
+}
+
+.card-profile {
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 65px;
+}
+
+.box-menu-opcoes {
+    background: #fff;
+    padding: 15px 3% 15px 3%;
+    margin: 0px 10px 0 0;
+}
+
+.box-main {
+    background: #fff;
+    padding: 15px 3% 15px 3%;
+    margin: 0px 10px 0 0;
+}
+
+.box-main table{
+    width: 1080px;
+}
+
+.menu-opcoes {
+
+}
+
+.menu-opcoes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+.menu-opcoes ul li {
+    position: relative;
+}
+
+.menu-opcoes ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #1E90FF;
+    padding: 5px;
+    border: 1px solid #fff;
+    font-style: unset;
+}
+
+.box-cadastro input{
+    outline: none;
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    border-radius: 3px;
+}
+
+.box-cadastro label{
+    font-size: 15px;
+    font-family: inherit, sans-serif;
+    color: #808080;
+}
+
+.box-login label{
+    font-size: 15px;
+    font-family: inherit, sans-serif;
+    color: #000080;
+}
+
+.box-login h3{
+    font-family: inherit, sans-serif;
+    color: #000080;
+    font-style: unset;
+}
+
+.box-cadastro h3{
+    font-family: inherit, sans-serif;
+    color: #696969;
+}
+
+.box-login input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    border-radius: 3px;
+}
+
+.box-login input {
+    outline: none;
+}
+
+.header-container {
+    margin-top: -10px;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 65px;
+}
+
+.logo-about {
+    max-height: 200px;
+    max-width: 240px;
+}
+
+.drop-header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.item-footer {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header-menu {
+    list-style:none;
+    float:left;
+}
+
+.header-menu li {
+    position:relative;
+    float:left;
+}
+
+.header-menu li a{
+    color:#333;
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+}
+
+.header-menu li a:hover{
+    background:#333;
+    color:#fff;
+}
+
+.header-menu li:hover ul, .header-menu li.over ul{
+    display:block;
+}
+
+.header-menu li ul li{
+    display:block;
+    width:150px;
+}
+
+.header-menu li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.header-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.header-menu li{
+    float: left;
+}
+

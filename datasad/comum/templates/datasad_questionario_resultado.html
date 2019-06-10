@@ -1,0 +1,30 @@
+{% extends "datasad_base.html" %}
+{% load staticfiles %}
+
+{% block body_header %}
+    {% include 'datasad_header_about.html' %}
+{% endblock body_header %}
+
+{% block body_container %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                {% include 'datasad_menu_opcoes.html' %}
+            </div>
+            <div class="col-xs-9">
+                <div class="row box-main">
+                    <div class="col-xs-12">
+                      <h5>Resultados do quqestionário Atividades Acadêmicas</h5>
+                      <div class="row">
+                          <div class="col-xs-6">
+                            <div >
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body_container %}

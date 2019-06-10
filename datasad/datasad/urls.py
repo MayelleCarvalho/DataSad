@@ -19,5 +19,9 @@ from comum import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
+    path('', views.index, name='exibir_index'),
+    path('login/', views.exibir_login, name='exibir_login'),
+    path('usuario/novo/', views.exibir_cadastro_usuario, name='exibir_cadastro_usuario'),
+    path('home/', views.exibir_home, name='exibir_home'),
+    path('questionario/id', views.exibir_questionario_detail, name='exibir_questionario_detail'),
 ]

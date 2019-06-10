@@ -1,0 +1,62 @@
+{% extends "datasad_base.html" %}
+{% load staticfiles %}
+
+{% block body_header %}
+    {% include 'datasad_header_about.html' %}
+{% endblock body_header %}
+
+{% block body_container %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                {% include 'datasad_menu_opcoes.html' %}
+            </div>
+            <div class="col-xs-9">
+                <div class="row box-main">
+                    <div class="col-xs-12">
+                      <h5>
+                          Questionário de atividades acadêmicas
+                      </h5>
+                      <div>
+                        <h6 align="center">Itens</h6>
+                          <table class="table table-hover">
+                            <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Item</th>
+                              <th scope="col">Ações</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Dados Pessoais</td>
+                                  <td>ações</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Socio demográfico</td>
+                                  <td>ações</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Socio econômico </td>
+                                  <td>ações</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>Atividades acadêmicas</td>
+                                  <td>ações</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      <div align="center">
+                          <a href="#" class="btn btn-success">Ativar</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body_container %}

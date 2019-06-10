@@ -1,0 +1,22 @@
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <nav>
+        <div class="d-inline p-2">
+            <a href="{% url 'exibir_index' %}"><img class="logo float-left" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></a>
+        </div>
+        <ul class="header-menu float-right drop-header">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+                <li><a href="#">O que fazemos?</a>
+                    <ul>
+                          <li><a href="#">Web Design</a></li>
+                          <li><a href="#">SEO</a></li>
+                          <li><a href="#">Design</a></li>
+                    </ul>
+                </li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</div>
