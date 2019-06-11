@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load i18n%}
+{% load staticfiles %}
+<html>
+   <head>
+        <title>Index Data-SAD</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
+        libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+   <body>
+
+        <footer>
+            <div class="body-header">
+                <nav>
+                    <div class="d-inline p-2">
+                        <a href="{% url 'exibir_index' %}"><img class="logo float-left" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></a>
+                    </div>
+                    <div class="header-menu float-right drop-header">
+                        <button type="button" class="btn btn-info">Sair</button>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="box-menu-opcoes">
+                    <div class="card card-menu-opcoes" >
+                        <div class="center">
+                            <img src="{% static 'images/equipe_multidisciplinar_default.jpg' %}" class="card-img-menu" alt="...">
+                        </div>
+                        <h5 align="center">Antônio Souza</h5>
+                    </div>
+                    <nav class="menu-opcoes">
+                        <ul>
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Questionários</a></li>
+                            <li><a href="#">Avaliação</a></li>
+                            <li><a href="#">Relatórios</a></li>
+                            <li><a href="#">Solicitações</a></li>
+                            <li><a href="#">Resultados</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div id="conteudo">
+                    {% block home_conteudo %}
+
+                    {% endblock home_conteudo %}
+                </div>
+            </div>
+        </div>
+   </body>
+</html>

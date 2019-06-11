@@ -22,6 +22,10 @@ urlpatterns = [
     path('', views.index, name='exibir_index'),
     path('login/', views.exibir_login, name='exibir_login'),
     path('usuario/novo/', views.exibir_cadastro_usuario, name='exibir_cadastro_usuario'),
+    path('usuario/novo/profissional/', views.exibir_cadastro_profissional, name='exibir_cadastro_profissional'),
+    path('usuario/novo/aluno/', views.exibir_cadastro_aluno, name='exibir_cadastro_aluno'),
+    path('cadastro/usuario/', views.exibir_cadastro_geral, name='exibir_cadastro_geral'),
     path('home/', views.exibir_home, name='exibir_home'),
-    path('questionario/id', views.exibir_questionario_detail, name='exibir_questionario_detail'),
+    path('home/questionario/id', views.exibir_questionario_detail, name='exibir_questionario_detail'),
+    path('home/questionario/', views.exibir_questionario_list, name='exibir_questionario_list'),
 ]

@@ -1,19 +1,8 @@
-{% extends "datasad_base.html" %}
+{% extends "datasad_base_home.html" %}
 {% load staticfiles %}
 
-{% block body_header %}
-    {% include 'datasad_header_about.html' %}
-{% endblock body_header %}
+{% block home_conteudo %}
 
-{% block body_container %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-3">
-                {% include 'datasad_menu_opcoes.html' %}
-            </div>
-            <div class="col-xs-9">
-                {% include 'datasad_questionario_list.html' %}
-            </div>
-    </div>
-    </div>
-{% endblock body_container %}
+    alguma coisa para o home
+
+{% endblock home_conteudo %}

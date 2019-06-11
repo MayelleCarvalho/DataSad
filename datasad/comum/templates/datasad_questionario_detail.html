@@ -1,62 +1,191 @@
-{% extends "datasad_base.html" %}
+{% extends "datasad_base_home.html" %}
 {% load staticfiles %}
 
-{% block body_header %}
-    {% include 'datasad_header_about.html' %}
-{% endblock body_header %}
+{% block home_conteudo %}
 
-{% block body_container %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-3">
-                {% include 'datasad_menu_opcoes.html' %}
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-form-label">Detalhe do questionário:</label>
+              </div>
             </div>
-            <div class="col-xs-9">
-                <div class="row box-main">
-                    <div class="col-xs-12">
-                      <h5>
-                          Questionário de atividades acadêmicas
-                      </h5>
-                      <div>
-                        <h6 align="center">Itens</h6>
-                          <table class="table table-hover">
-                            <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">Item</th>
-                              <th scope="col">Ações</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Dados Pessoais</td>
-                                  <td>ações</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Socio demográfico</td>
-                                  <td>ações</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Socio econômico </td>
-                                  <td>ações</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">4</th>
-                                  <td>Atividades acadêmicas</td>
-                                  <td>ações</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                      </div>
-                      <div align="center">
-                          <a href="#" class="btn btn-success">Ativar</a>
-                      </div>
-                    </div>
+            <div class="col-2">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Id</div>
+                </div>
+                <input type="text" class="form-control" id="idquest" value="01">
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Descrição</div>
+                </div>
+                <input type="text" class="form-control"  value="Questionário de Transtorno de Ansiedade">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-sm-2 col-form-label">Item:</label>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+                <input type="text" class="form-control" value="Eu me sinto tenso ou contraído">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-form-label">Alternativas:</label>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                    A maior parte do tempo
+                  </label>
                 </div>
             </div>
-        </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"  value="option1" checked>
+                  <label class="form-check-label">
+                    Boa parte do tempo
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"value="option1" checked>
+                  <label class="form-check-label">
+                    De vez em quando
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                    Nunca
+                  </label>
+                </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label  class="col-sm-2 col-form-label">Item:</label>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+                <input type="text" class="form-control" value=" Eu ainda sinto gosto pelas mesmas coisas de antes">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-form-label">Alternativas:</label>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                     Sim, do mesmo jeito que antes
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"  value="option1" checked>
+                  <label class="form-check-label">
+                    Não tanto quanto antes
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"value="option1" checked>
+                  <label class="form-check-label">
+                    Só um pouco
+                  </label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                     Já não sinto mais prazer em nada
+                  </label>
+                </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label  class="col-sm-2 col-form-label">Item:</label>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+                <input type="text" class="form-control" value="Dou risada e me divirto quando vejo coisas engraçadas">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-form-label">Alternativas:</label>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                     Do mesmo jeito que antes
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"  value="option1" checked>
+                  <label class="form-check-label">
+                    Atualmente um pouco menos
+                  </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios"value="option1" checked>
+                  <label class="form-check-label">
+                    Atualmente bem menos
+                  </label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                  <label class="form-check-label">
+                      Não consigo mais
+                  </label>
+                </div>
+            </div>
+          </div>
+        </form>
     </div>
-{% endblock body_container %}
+</div>
+
+{% endblock home_conteudo %}
+
+

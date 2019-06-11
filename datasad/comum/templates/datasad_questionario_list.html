@@ -1,5 +1,10 @@
-<div class="row box-main">
-    <div class="col-xs-12">
+{% extends "datasad_base_home.html" %}
+{% load staticfiles %}
+
+{% block home_conteudo %}
+
+<div class="row">
+    <div class="col-sm-12">
         <h3 align="center">Seus questionários</h3>
         <table class="table table-hover">
             <thead>
@@ -14,8 +19,8 @@
             <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Dados Pessoais</td>
-                  <td>Assistência Social</td>
+                  <td>Transtorno de Ansiedade</td>
+                  <td>Psicologia</td>
                   <td>Ativo</td>
                   <td>ações</td>
                 </tr>
@@ -28,9 +33,9 @@
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Socio econômico </td>
-                  <td>Assistência Social</td>
-                  <td>Encerrado</td>
+                  <td>Transtorno de Depressão </td>
+                  <td>Psicologia</td>
+                  <td>Arquivado</td>
                   <td>ações</td>
                 </tr>
                 <tr>
@@ -40,8 +45,25 @@
                   <td>Ativo</td>
                   <td>ações</td>
                 </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Dados Pessoais</td>
+                  <td>Assistência Social</td>
+                  <td>Ativo</td>
+                  <td>ações</td>
+                </tr>
+                <tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Socio econômico </td>
+                  <td>Assistência Social</td>
+                  <td>Encerrado</td>
+                  <td>ações</td>
+                </tr>
             </tbody>
         </table>
     </div>
-
 </div>
+
+{% endblock home_conteudo %}
+

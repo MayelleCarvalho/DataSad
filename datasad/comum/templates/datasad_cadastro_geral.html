@@ -1,0 +1,59 @@
+{% extends "datasad_base.html" %}
+{% load staticfiles %}
+
+{% block body_header %}
+    {% include 'datasad_header_about.html' %}
+{% endblock body_header %}
+
+{% block body_container %}
+<div class="body-container">
+    <div class="box-about">
+        <div class="jumbotron">
+          <h1 align="center"><img class="img-fluid logo-about" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></h1>
+          <h2 style="color: #0431B4;" align="center">Cadastre-se!!!</h2>
+          <p  align="center" class="lead">
+            Escolha um tipo de usuário, para iniciar seu cadastro.
+          </p>
+          <div class="dropdown-divider"></div>
+          <div class="row">
+              <div class="card-deck">
+                  <div class="card">
+                    <div align="center">
+                        <img src="{% static 'images/equipe_multidisciplinar_default.jpg' %}" class="card-img-top card-img-tam" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 align="center" class="card-title"><a href="#">Equipe Multidisciplinar</a></h5>
+                      <p class="card-text">
+                        Profissionais que atuam nas áreas de pedagogia, psicologia, assistência social, psicopedagogia e cordenações no IFPI.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div align="center">
+                        <img src="{% static 'images/aluno_default.png' %}" class="card-img-top card-img-tam" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 align="center" class="card-title"><a href="#">Aluno</a></h5>
+                      <p class="card-text">
+                          Todos os discentes do IFPI, alunos com matricula ativa no ensino médio, ensino superior e técnico.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div align="center">
+                        <img src="{% static 'images/pesquisador_default.png' %}" class="card-img-top card-img-tam" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 align="center" class="card-title"><a href="#">Pesquisador</a></h5>
+                      <p class="card-text">
+                          Todo o público acadêmico ou pesquisador de instituições externas.
+                          Faça seu cadastro e tenha acesso a nossa base para pesquisas e trabalhos acadêmicos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock body_container %}
