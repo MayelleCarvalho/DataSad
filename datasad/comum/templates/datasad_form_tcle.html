@@ -1,0 +1,95 @@
+{% extends "datasad_base_home.html" %}
+{% load staticfiles %}
+
+{% block home_conteudo %}
+<div class="row">
+    <div class="col-sm-12">
+        <div align="center">
+            <h2>Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI)</h2>
+            <h2>Campus Teresina Central(IFPI)</h2>
+            </br>
+            <h5>Termo de Consentimento Livre e Esclarecido (TCLE)</h5>
+        </div>
+        <div class="block-text-tcle">
+            <p align="left">Prezado(a) Aluno,</p>
+            </br>
+            <p class="text-justify">
+                Convidamos você a participar de nossa pesquisa que tem o objetivo de construir uma
+                plataforma de integração de dados e avaliação de sintomas dos transtornos de
+                ansiedade e depressão para escolas, para isso será realizado um levantamento com
+                perguntas referente a questões sociais, demográficas, econômicas, escolares e itens que
+                avaliam sintomas de depressão e ansiedade, estes dados serão coletados por meio de um formulário eletrônico.
+            </p>
+            <p class="text-justify">
+                Durante a execução do projeto serão avaliados condicionamento mental do sujeito
+                correlacionando com os demais dados levantados, mesmo os pesquisadores mantendo o
+                sigilo de informações dos participantes, os dados serão divulgados como resultado da
+                pesquisa, podendo está expondo alguma informação do conjunto em que se aplicou.
+                Para algum questionamento, dúvida ou relato de algum acontecimento os pesquisadores
+                poderão ser contatados a qualquer momento. Os dados coletados nessa pesquisa serão
+                analisados e correlacionados através de métodos estatísticos, traçando perfis dos alunos
+                investigados, para uma melhor atuação dos pedagogos, assistentes sociais e psicólogos
+                da instituição, para que os mesmos possam auxiliar àqueles que indicarem baixo
+                desempenho escolar ou comportamento diferente do esperado. Nestes termos
+                afirmamos que: a participação do sujeito na pesquisa dá o direito de ficar com uma via
+                deste termo; a participação do sujeito não acarretará em nenhum gasto financeiro, bem
+                como também não receberá nenhum valor financeiro pela participação no estudo; a
+                identificação dos sujeitos que consentirem sua participação no estudo serão
+                confidenciais e utilizados somente para fins científicos; o participante poderá a qualquer
+                momento cancelar sua participação sem qualquer prejuízo.
+            </p>
+            <p class="text-justify">
+                Em caso de reclamação ou qualquer tipo de denúncia ou maiores informações
+                sobre este estudo o participante deve ligar para o Comitê de Ética e Pesquisa (CEP) do
+
+                IFPI no número (86) 3131-1441 ou mandar um E-mail para cep@ifpi.edu.br, o mesmo
+                está em funcionamento de segunda à sexta, das 8h às 12h e das 14h às 18h.
+                Declaro estar ciente do exposto e desejo participar da pesquisa.
+            </p>
+            </br>
+            <h6 align="left"><strong>Termo de compromisso dos pesquisadores</strong></h6>
+            <p class="text-justify">Garantimos que este Termo de Consentimento será seguido e que responderemos a quaisquer questões colocadas pelo participante.</p>
+            <p align="left"><strong>D.ra Profa. Bruna de Freitas Iwata</strong><br/>Orientadora - IFPI</p>
+            <p align="left"><strong>Mayelle dos Santos Lima de Carvalho</strong><br/>Orientando - IFPI</p>
+            </br>
+            <h6 align="left"><strong>Consentimento de participação da pessoa como sujeito da pesquisa</strong></h6>
+            <p class="text-justify">
+                Declaro que li os detalhes descritos neste documento.
+                Entendo que eu sou livre para aceitar ou recusar e que eu posso
+                interromper minha participação a qualquer momento.
+                Eu concordo que os dados coletados para o estudo sejam usados para
+                os propósitos acima descritos. Para participar da pesquisa, é necessário
+                que você concorde com o termo de Consentimento Livre e Esclarecido.
+                Você concorda em participar desta pesquisa?
+            </p>
+
+
+
+        </div>
+
+        <form method="post" action="{% url 'exibir_questionario' %}">
+            <div align="left" class="form-row">
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        Sim
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        Não
+                      </label>
+                    </div>
+                </div>
+                </br>
+                <div class="col-12">
+                    <input type="submit" class="btn btn-success" value="Enviar" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+{% endblock home_conteudo %}

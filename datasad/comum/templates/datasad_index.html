@@ -8,24 +8,31 @@
 {% block body_container %}
 <div class="body-container">
     <div class="box-about">
-        <div class="jumbotron">
+        <!--<div class="jumbotron">-->
           <h1 align="center"><img class="img-fluid logo-about" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></h1>
           <p  align="center" class="lead">
               Plataforma de Integração de dados de alunos, para avaliação de desempenho escolar.
           </p>
           <hr class="my-4">
-          <h6 class="text-justify text-about">
-              O Data-SAD é uma aplicação web, desenvolvida para o Instituto Federal do Piauí (IFPI),
-              Campus Teresina Central, para coleta, integração e gerenciamento de dados dos alunos da
-              instituição, disponibilizando informações estatísticas para análise dos profissionais
-              sobre os fatores sociais, demográficos, econômicos e sintomas de ansiedade e depressão
-              por meio de instrumentos(formulários, questionários testes) validados.
-          </h6>
           <div align="center">
-              <a class="btn btn-success btn-block" href="{% url 'exibir_login' %}" role="button">Entrar!</a>
-              <a class="btn btn-primary btn-block" href="{% url 'exibir_cadastro_usuario' %}" role="button">Cadastre-se!</a>
+              <div class="block-text">
+                  <h6 class="text-justify text-about">
+                      O Data-SAD é uma aplicação web, desenvolvida para o Instituto Federal do Piauí (IFPI),
+                      Campus Teresina Central, para coleta, integração e gerenciamento de dados dos alunos da
+                      instituição, disponibilizando informações estatísticas para análise dos profissionais
+                      sobre os fatores sociais, demográficos, econômicos e sintomas de ansiedade e depressão
+                      por meio de instrumentos(formulários, questionários testes) validados.
+                  </h6>
+              </div>
           </div>
-        </div>
+          <hr class="my-4">
+          <div align="center">
+              <div class="block-btn">
+                  <a class="btn btn-success btn-block" href="{% url 'exibir_login' %}" role="button">Entrar!</a>
+                  <a class="btn btn-primary btn-block" href="{% url 'exibir_cadastro_usuario' %}" role="button">Cadastre-se!</a>
+              </div>
+          </div>
+        <!--</div>-->
     </div>
 </div>
 {% endblock body_container %}

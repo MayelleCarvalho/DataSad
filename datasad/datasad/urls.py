@@ -28,4 +28,6 @@ urlpatterns = [
     path('home/', views.exibir_home, name='exibir_home'),
     path('home/questionario/id', views.exibir_questionario_detail, name='exibir_questionario_detail'),
     path('home/questionario/', views.exibir_questionario_list, name='exibir_questionario_list'),
+    path('aluno/tcle', views.exibir_tcle, name='exibir_tcle'),
+    path('aluno/resposta/questionario', views.exibir_questionario, name='exibir_questionario'),
 ]

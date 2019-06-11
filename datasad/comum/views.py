@@ -26,3 +26,9 @@ def exibir_cadastro_geral(request):
 
 def exibir_home(request):
     return render(request, 'datasad_home.html')
+
+def exibir_tcle(request):
+    return render(request, 'datasad_form_tcle.html')
+
+def exibir_questionario(request):
+    return render(request, 'datasad_questionario.html')
