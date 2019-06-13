@@ -5,106 +5,146 @@
 
 
 <form method="post" action="{% url 'exibir_questionario' %}">
-    <h3>Questionário de Avaliação de sintomas de ansiedade </h3>
-    <div class="jumbotron jumb-quest">
-        <h4 align="left" class="display-5" >Eu me sinto tenso ou contraído:</h4>
-        <div align="left" class="form-row">
-            <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    A maior parte do tempo
-                  </label>
+    <div class="row titulo-1">
+        <div align="center">
+            <h2 align="center">Questionário de Avaliação de sintomas de ansiedade </h2>
+        </div>
+    </div>
+
+    <div class="row box-items">
+        <div class="col-6 box-item-quest" align="left">
+            <h4 align="left" class="display-5" >Eu me sinto tenso ou contraído:</h4>
+            <div align="left" class="form-row">
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>A maior parte do tempo</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Boa parte do tempo</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>De vez em quando</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Nunca</p>
+                      </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Boa parte do tempo
-                  </label>
+            </div>
+        </div>
+        <div class="col-6 box-item-quest" align="right">
+            <h4 align="left" class="display-5" >Eu ainda sinto gosto pelas mesmas coisas de antes:</h4>
+            <div align="left" class="form-row">
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Sim, do mesmo jeito que antes</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Não tanto quanto antes</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Só um pouco</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Já não sinto mais prazer em nada</p>
+                      </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    De vez em quando
-                  </label>
+            </div>
+        </div>
+    </div>
+    <div class="row box-items">
+        <div class="col-6 box-item-quest">
+            <h4 align="left" class="display-5" >Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer:</h4>
+            <div align="left" class="form-row">
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Sim, de um jeito muito forte</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Sim, mas não tão forte</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Um pouco, mas isso não me preocupa</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Não sinto nada disso</p>
+                      </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Nunca
-                  </label>
+            </div>
+        </div>
+        <div class="col-6 box-item-quest">
+            <h4 align="left" class="display-5" >Dou risada e me divirto quando vejo coisas engraçadas:</h4>
+            <div align="left" class="form-row">
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Do mesmo jeito que antes</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Atualmente um pouco menos</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Atualmente bem menos</p>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" >
+                      <label class="form-check-label">
+                        <p>Não consigo mais</p>
+                      </label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="jumbotron jumb-quest">
-        <h4 align="left" class="display-5" >Eu ainda sinto gosto pelas mesmas coisas de antes:</h4>
-        <div align="left" class="form-row">
-            <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Sim, do mesmo jeito que antes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Não tanto quanto antes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Só um pouco
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Já não sinto mais prazer em nada
-                  </label>
-                </div>
-            </div>
+    <div class="row box-btn-quest">
+        <div align="center">
+            <input type="submit" class="btn btn-success btn-quest" value="Enviar" />
+            <input type="button" class="btn btn-danger btn-quest" value="Cancelar">
         </div>
-    </div>
-
-    <div class="jumbotron jumb-quest">
-        <h4 align="left" class="display-5" >Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer:</h4>
-        <div align="left" class="form-row">
-            <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Sim, de um jeito muito forte
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Sim, mas não tão forte
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Um pouco, mas isso não me preocupa
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" >
-                  <label class="form-check-label">
-                    Não sinto nada disso
-                  </label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 btn-quest">
-        <input type="submit" class="btn btn-success" value="Enviar" />
     </div>
 </form>
 

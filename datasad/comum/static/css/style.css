@@ -1,9 +1,13 @@
-header, footer{
+ /*** GERAL ****/
+
+ header, footer{
     height: 55px;
     background-color: #1E90FF;
     font-family: sans-serif;
     color: #F2F2F2;
 }
+
+/** ***/
 
 .body-container{
     width: 100vw;
@@ -15,70 +19,113 @@ header, footer{
     align-items: center;
 }
 
-.body-header{
-    width: 100vw;
-    height: 40px;
-    background: #1E90FF;
-    display: grid;
-}
-
-
-#conteudo {
+/********************************* BASE HOME ***********************/
+.box-conteudo {
     width: 100%;
     float: right;
-    text-align: center;
-    margin-top: 15px;
-    margin-right: 35px;
-    background-color: #fff;
+    /*text-align: center;*/
+    padding: 10px 10px 10px 10px;
 }  
 
-#menu {
+/**MENU OPÇÕES*/
+
+.box-menu-opcoes {
+    padding: 10px 10px 10px 10px;
+    width: 100%
+}
+
+.menu-opcoes {
+    width: 100%;
+}
+
+.menu-opcoes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
-    margin-left: -30px;
-    padding: 0;
-    float: left;
 }
 
-#menu ul li {
-    margin: 0; padding: 0px;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-    list-style-type: none;
+.menu-opcoes ul li {
+    position: relative;
 }
 
-#menu a:link {
-    background: #1E90FF;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
+.menu-opcoes ul li a{
     display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #1E90FF;
+    padding: 5px;
+    border: 1px solid #fff;
+    font-style: unset;
+}
+
+/*CARD MENU OPÕES**/
+
+.img-menu{
     width: 100%;
 }
 
-#box-menu {
-    margin-top: 10px;
-    width:80%;
-    height:100%;
-    background: #1E90FF;
+.img-card-menu {
+    width: 100%;
+    height: auto;
+    padding: 10% 10% 10% 10%; 
+    overflow: hidden; 
 }
 
-.jumb-quest {
-    background-color: #E0F2F7;
+/*************************************************************************/
+
+.titulo-1{
+    background-color: #EFF8FB; 
+    border-radius: 5px;
+    height: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.jumb-quest label{
-    margin-bottom: 20px;
-}
-
-.jumb-quest h4{
-    margin-bottom: 20px;
+.titulo-1 h2 {
+    font-family: unset;
     color: #1E90FF;
 }
 
-.btn-quest {
-    margin-top: 20px;
+.box-item-quest {
+    width: 100%;
+    float: left;
+    /*text-align: center;*/
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+    border-radius: 5px; 
+    margin-top: 5px;
+}
+
+.box-items{
+    background-color: #EFF8FB;
+    border-radius: 5px; 
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.box-item-quest h4{
+    color: #1E90FF;
+}
+
+.box-item-quest p{
+    color: #0B0B3B;
+}
+
+.box-btn-quest {
+    width: 100%;
+    background-color: #EFF8FB; 
+    border-radius: 5px;
+    height: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-quest{
+    width: 150px;
 }
 
 .box-questionario {
@@ -132,10 +179,7 @@ header, footer{
     margin-top: 5px;
 }
 
-.card-img-menu{
-    width: 100px;
-    height: 90px;
-}
+
 
 .box-cadastro{
     width: 70%;
@@ -155,31 +199,6 @@ header, footer{
     width: 100%;    
 }
 
-.card-menu-opcoes {
-    padding-left: 20px;
-    width: 150px;
-    height: 150px;
-    color: #000080;
-    font-style: unset;
-}
-
-.card-menu-opcoes h5{
-    padding-left: -20px;
-}
-
-.card-profile {
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 10px;
-    height: 40px;
-    width: 65px;
-}
-
-.box-menu-opcoes {
-    background: #fff;
-    padding: 15px 3% 15px 3%;
-    margin: 0px 10px 0 0;
-}
 
 .box-main {
     background: #fff;
@@ -191,32 +210,6 @@ header, footer{
     width: 1080px;
 }
 
-.menu-opcoes {
-
-}
-
-.menu-opcoes ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 150px;
-}
-
-.menu-opcoes ul li {
-    position: relative;
-}
-
-
-
-.menu-opcoes ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    background: #1E90FF;
-    padding: 5px;
-    border: 1px solid #fff;
-    font-style: unset;
-}
 
 .box-cadastro input{
     outline: none;
@@ -281,9 +274,8 @@ header, footer{
 .drop-header {
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
-
 
 .header-menu {
     list-style:none;
@@ -342,3 +334,29 @@ header, footer{
     float: left;
 }
 
+/* ***** INUTILIZADOS:
+
+#box-menu {
+    margin-top: 10px;
+    width:80%;
+    height:100%;
+    background: #1E90FF;
+}
+
+#menu {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -30px;
+    padding: 0;
+    float: left;
+}
+.card-profile {
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 65px;
+}
+
+******/

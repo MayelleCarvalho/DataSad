@@ -14,7 +14,7 @@
 
    <body>
 
-        <footer>
+        <header>
             <div class="body-header">
                 <nav>
                     <div class="d-inline p-2">
@@ -25,17 +25,19 @@
                     </div>
                 </nav>
             </div>
-        </footer>
+        </header>
 
         <div class="row">
             <div class="col-sm-2">
                 <div class="box-menu-opcoes">
                     <div class="card card-menu-opcoes" >
-                        <div class="center">
-                            <img src="{% static 'images/equipe_multidisciplinar_default.jpg' %}" class="card-img-menu" alt="...">
+                        <div class="center img-card-menu">
+                            <img src="{% static 'images/aluno_default.png' %}" class="img-menu" alt="...">
                         </div>
-                        <h5 align="center">Antônio Souza</h5>
+                        <div class="dropdown-divider"></div>
+                        <h6 align="center">Paulo Feitosa</h6>
                     </div>
+
                     <nav class="menu-opcoes">
                         <ul>
                             <li><a href="#">Perfil</a></li>
@@ -49,7 +51,7 @@
                 </div>
             </div>
             <div class="col-sm-10">
-                <div id="conteudo">
+                <div class="box-conteudo">
                     {% block home_conteudo %}
 
                     {% endblock home_conteudo %}
