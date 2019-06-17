@@ -1,0 +1,146 @@
+{% extends "datasad_base_home.html" %}
+{% load staticfiles %}
+
+{% block home_menu %}
+    {% include 'datasad_menu_opcoes.html' %}
+{% endblock home_menu %}
+
+{% block home_conteudo %}
+
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+
+          <div class="box-items">
+            <h2>Gerenciamento de Permissões</h2>
+            <div class="input-group row">
+              <div class="col-1">
+                  <label class="col-sm-2 col-form-label">Perfil:</label>
+              </div>
+              <div class="col-4">
+                <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected>Selecione...</option>
+                    <option value="1">Aluno</option>
+                    <option value="2">Profissional</option>
+                    <option value="3">Pesquisador</option>
+                </select>
+              </div>
+              <div class="col-1">
+                  <button class="btn btn-primary" type="button">Salvar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-items">
+              <h5>Funcionalidades:</h5>
+              <div class="dropdown-divider"></div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">Ações:</h4>
+                </div>
+                <div class="col-sm-1">
+                  <h4 class="col-sm-1 col-form-label">EDITAR</h4>
+                </div>
+                <div class="col-sm-1">
+                  <h4 class="col-sm-1 col-form-label">EXCLUIR</h4>
+                </div>
+                <div class="col-sm-1">
+                  <h4 class="col-sm-2 col-form-label">CADASTRAR</h4>
+                </div>
+                <div class="col-sm-1">
+                  <h4 class="col-sm-2 col-form-label">VISUALIZAR</h4>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">QUESTIONÁRIOS</h4>
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">AVALIAÇÃO</h4>
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">RELATÓRIOS</h4>
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">SOLICITAÇÕES</h4>
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2">
+                  <h4 class="col-sm-2 col-form-label">RESULTADOS</h4>
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <div align="center" class="col-sm-1">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+          </div>
+
+
+        </form>
+    </div>
+</div>
+
+{% endblock home_conteudo %}

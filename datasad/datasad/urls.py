@@ -30,4 +30,6 @@ urlpatterns = [
     path('home/questionario/', views.exibir_questionario_list, name='exibir_questionario_list'),
     path('aluno/tcle', views.exibir_tcle, name='exibir_tcle'),
     path('aluno/resposta/questionario', views.exibir_questionario, name='exibir_questionario'),
+    path('home/novo/questionario', views.exibir_cadastro_questionario, name='exibir_cadastro_questionario'),
+    path('home/admin/permissoes', views.exibir_gerenciamento_permissoes, name='exibir_permissoes'),
 ]

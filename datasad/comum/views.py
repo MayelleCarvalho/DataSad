@@ -32,3 +32,10 @@ def exibir_tcle(request):
 
 def exibir_questionario(request):
     return render(request, 'datasad_questionario.html')
+
+def exibir_cadastro_questionario(request):
+    return render(request, 'datasad_cadastro_questionario.html')
+
+
+def exibir_gerenciamento_permissoes(request):
+    return render(request, 'datasad_gerenciar_permissoes.html')

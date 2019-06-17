@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
         libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}"/>
     </head>
 
    <body>
@@ -21,7 +22,8 @@
                         <a href="{% url 'exibir_index' %}"><img class="logo float-left" src="{% static 'images/datasad_logo2.png' %}" alt="logo"/></a>
                     </div>
                     <div class="header-menu float-right drop-header">
-                        <button type="button" class="btn btn-info">Sair</button>
+                        <ion-icon name="person"></ion-icon>
+                        <a href="#"><button type="button" class="btn btn-light"><i class="ion-log-out"></i></button></a>
                     </div>
                 </nav>
             </div>
@@ -30,24 +32,9 @@
         <div class="row">
             <div class="col-sm-2">
                 <div class="box-menu-opcoes">
-                    <div class="card card-menu-opcoes" >
-                        <div class="center img-card-menu">
-                            <img src="{% static 'images/aluno_default.png' %}" class="img-menu" alt="...">
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <h6 align="center">Paulo Feitosa</h6>
-                    </div>
+                    {% block home_menu %}
 
-                    <nav class="menu-opcoes">
-                        <ul>
-                            <li><a href="#">Perfil</a></li>
-                            <li><a href="#">Questionários</a></li>
-                            <li><a href="#">Avaliação</a></li>
-                            <li><a href="#">Relatórios</a></li>
-                            <li><a href="#">Solicitações</a></li>
-                            <li><a href="#">Resultados</a></li>
-                      </ul>
-                    </nav>
+                    {% endblock home_menu %}
                 </div>
             </div>
             <div class="col-sm-10">

@@ -1,6 +1,10 @@
 {% extends "datasad_base_home.html" %}
 {% load staticfiles %}
 
+{% block home_menu %}
+    {% include 'datasad_menu_opcoes.html' %}
+{% endblock home_menu %}
+
 {% block home_conteudo %}
 <div class="row">
     <div class="col-sm-12">

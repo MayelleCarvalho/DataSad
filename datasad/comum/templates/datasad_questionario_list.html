@@ -1,64 +1,110 @@
 {% extends "datasad_base_home.html" %}
 {% load staticfiles %}
 
+{% block home_menu %}
+    {% include 'datasad_menu_opcoes.html' %}
+{% endblock home_menu %}
+
 {% block home_conteudo %}
 
 <div class="row">
     <div class="col-sm-12">
-        <h3 align="center">Seus questionários</h3>
+        <h2 align="center">Seus Questionários</h2>
         <table class="table table-hover">
             <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Questionário</th>
-              <th scope="col">Área</th>
-              <th scope="col">Status</th>
-              <th scope="col">Ações</th>
+                <th scope="col"><h4>#</h4></th>
+              <th scope="col"><h4>Questionário</h4></th>
+              <th scope="col"><h4>Área</h4></th>
+              <th scope="col"><h4>Status</h4></th>
+              <th scope="col"><h4>Ações</h4></th>
             </tr>
             </thead>
             <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Transtorno de Ansiedade</td>
-                  <td>Psicologia</td>
-                  <td>Ativo</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Sintomas de Ansiedade</h5></td>
+                  <td><h5>Psicologia</h5></td>
+                  <td>
+                      <h2><span class="badge badge-danger">Encerrado</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Socio demográfico</td>
-                  <td>Assistência Social</td>
-                  <td>Encerrado</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Perfil Socio Demográfico</h5></td>
+                  <td><h5>Assistência Social</h5></td>
+                  <td>
+                      <h2><span class="badge badge-secondary">Arquivado</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Transtorno de Depressão </td>
-                  <td>Psicologia</td>
-                  <td>Arquivado</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Sintomas de Depressão </h5></td>
+                  <td><h5>Psicologia</h5></td>
+                  <td>
+                      <h2><span class="badge badge-danger">Encerrado</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Atividades acadêmicas</td>
-                  <td>Pedagogia</td>
-                  <td>Ativo</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Atividades acadêmicas</h5></td>
+                  <td><h5>Pedagogia</h5></td>
+                  <td>
+                      <h2><span class="badge badge-primary">Ativo</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td>Dados Pessoais</td>
-                  <td>Assistência Social</td>
-                  <td>Ativo</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Dados Pessoais</h5></td>
+                  <td><h5>Assistência Social</h5></td>
+                  <td>
+                      <h2><span class="badge badge-primary">Ativo</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
                 <tr>
                 <tr>
                   <th scope="row">6</th>
-                  <td>Socio econômico </td>
-                  <td>Assistência Social</td>
-                  <td>Encerrado</td>
-                  <td>ações</td>
+                  <td><h5>Avaliação de Perfil Socio Econômico</h5></td>
+                  <td><h5>Assistência Social</h5></td>
+                  <td>
+                      <h2><span class="badge badge-danger">Encerrado</span></h2>
+                  </td>
+                  <td>
+                      <a href="#"><i class="icon ion-share"></i></a>
+                      <a href="#"><i class="icon ion-podium"></i></a>
+                      <a href="#"><i class="icon ion-trash-a"></i></a>
+                      <a href="#"><i class="icon ion-search"></i></a>
+                  </td>
                 </tr>
             </tbody>
         </table>

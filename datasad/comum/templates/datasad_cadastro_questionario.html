@@ -1,0 +1,286 @@
+{% extends "datasad_base_home.html" %}
+{% load staticfiles %}
+
+{% block home_menu %}
+    {% include 'datasad_menu_opcoes.html' %}
+{% endblock home_menu %}
+
+{% block home_conteudo %}
+
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+          <div align="center">
+            <h3>Detalhe de Questionário</h3>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label class="col-sm-2 col-form-label">Descrição:</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" value="Avaliação de Sintomas de Depressão" disabled>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="badge badge-info">Editar</a>
+                <a href="#" class="badge badge-danger">Excluir</a>
+            </div>
+          </div>
+          <div>
+            <h5>Itens:</h5>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label class="col-sm-2 col-form-label">Item:</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" value="Eu me sinto tenso ou contraído:" disabled>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="badge badge-info">Editar</a>
+                <a href="#" class="badge badge-danger">Excluir</a>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+              <div>
+                <h5>Alternativas:</h5>
+                <div class="dropdown-divider"></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="A maior parte do tempo" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="4" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Boa parte do tempo" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="3" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Devez em quando" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="2" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Nunca" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="1" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label class="col-sm-2 col-form-label">Item:</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" value="Eu ainda sinto gosto pelas mesmas coisas de antes:" disabled>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="badge badge-info">Editar</a>
+                <a href="#" class="badge badge-danger">Excluir</a>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+              <div>
+                <h5>Alternativas:</h5>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Sim, do mesmo jeito que antes" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="1" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Não tanto quanto antes" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="2" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Só um pouco" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="3" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Já não sinto mais prazer em nada" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="4" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label class="col-sm-2 col-form-label">Item:</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" value="Dou risada e me divirto quando vejo coisas engraçadas:" disabled>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="badge badge-info">Editar</a>
+                <a href="#" class="badge badge-danger">Excluir</a>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+              <div>
+                <h5>Alternativas:</h5>
+                <div class="dropdown-divider"></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Do mesmo jeito que antes" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="1" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Atualmente um pouco menos" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="2" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value="Atualmente bem menos" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="3" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value=" Não consigo mais" disabled>
+                </div>
+                <div class="col-sm-1">
+                    <label class="col-sm-2 col-form-label">Peso:</label>
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="4" disabled>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="badge badge-info">Editar</a>
+                    <a href="#" class="badge badge-danger">Excluir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+</div>
+
+{% endblock home_conteudo %}
